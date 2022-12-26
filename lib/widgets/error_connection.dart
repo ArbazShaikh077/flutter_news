@@ -34,14 +34,19 @@ class ErrorConnection extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
-                  child: new FlatButton(
-                    shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0),
-                    ),
+                  child: new TextButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(Colors.blue),
+                        textStyle: MaterialStateProperty.all(TextStyle(
+                          color: Colors.white,
+                        )),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0),
+                          ),
+                        )),
                     onPressed: tryAgain,
                     child: new Text(Cubes.getString("text_tentar_novamente")),
-                    color: Colors.blue,
-                    textColor: Colors.white,
                   ),
                 ),
               ],

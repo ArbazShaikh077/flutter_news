@@ -12,7 +12,7 @@ dependencies:
   url_launcher: ^6.0.6
   share: ^2.0.4
   http: ^0.13.3
-  cubes: ^1.0.2
+  cubes: 1.2.1
 
 dev_dependencies:
   flutter_test:

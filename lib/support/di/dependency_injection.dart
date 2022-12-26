@@ -22,7 +22,7 @@ class DependencyInjection {
   static void _injectRepository() {
     Cubes.registerDependency(
       (i) => Api("http://104.131.18.84"),
-      isSingleton: true,
+      type: DependencyRegisterType.singleton,
     );
 
     Cubes.registerDependency<NoticeRepository>(
